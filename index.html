@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naseef</title>
+    <link rel="icon" href="./Assets/icon.jpg">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main" id="my-scrollbar">
+      <div class="loading-page">
+        <div class="loader"></div>
+      </div>
+
+      <div class="nav">
+        <a href=""><p>N</p></a>
+        <div class="bar">
+          <a href=".home" class="active">home</a>
+          <a href=".about">about</a>
+          <a href=".services">services</a>
+          <a href=".portfolio">portfolio</a>
+          <a href=".contact">contact</a>
+        </div>
+      </div>
+
+      <div id="cursor"></div>
+      <div id="cursor-blur"></div>
+
+      <div class="s home">
+        <div class="left">
+          <h3>Hello World,</h3>
+          <h1>I'm <span></span></h1>
+          <h2>Software developer</h2>
+          <button id="scrollToAbout">More About Me</button>
+        </div>
+        <div class="right">
+          
+          <img src="./Assets/Naseef.png" alt="Naseef" />
+        </div>
+
+      </div>
+      
+
+      <div class="s about">
+        <h1>About <span>Me</span></h1>
+        <div class="aboutme">
+          <div class="left">
+            <div class="img-container">
+              <img src="./Assets/Naseef.png" alt="" />
+            </div>
+            <div class="icons">
+              <a href="https://github.com/Ibrahim-Naseef/" target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a href="mailto:ibrahimnaseef19@gmail.com" target="_blank"
+                ><i class="bx bxl-gmail"></i
+              ></a>
+              <a href="https://t.me/Player_1235" target="_blank"
+                ><i class="bx bxl-telegram"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/silentkiller9211/"
+                target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/nas-eef" target="_blank"
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="right">
+            <p>
+              Hi, I'm Ibrahim Naseef. I'm a software developer currently
+              pursuing a Bachelor's Degree in Computer Science and Engineering
+              with an aggregate of 8.93 SGPA. I am a tech enthusiast who has an
+              interest in web development, machine learning, and Java.
+            </p>
+            <p>
+              I am passionate about using technology to solve real-world
+              problems and always look for opportunities to learn and grow as an
+              engineer.
+            </p>
+            <p>
+              I am actively involved in various activities, participating in
+              inter-college fests and cultural events, as well as conducting
+              workshops and sessions for other students and peers. Currently, I
+              am seeking a job opportunity as a fresher to challenge my skills,
+              gain valuable experience, and contribute to the company's growth.
+            </p>
+            <div class="btn">
+              <button>Download CV</button>
+              <button id="scrollToContact">Hire Me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-info">
+        <div class="about-nav">
+          <p class="active">Experience</p>
+          <p>Skills</p>
+          <p>Education</p>
+        </div>
+
+        <div class="timeline active" id="experience">
+          <div class="container left-side">
+            <i class="bx bxs-briefcase"></i>
+            <div class="text-box">
+              <h2>Patent Student</h2>
+              <small>Nov 2022 - Present</small>
+              <p>
+                Worked as a patent student on the topic of "Age Detection
+                through Dental Images" at Yenepoya Medical College for a
+                professor. Conducted research, collected data, and analyzed
+                dental images using machine learning algorithms.
+              </p>
+              <span class="l-arrow"></span>
+            </div>
+          </div>
+
+          <div class="container right-side">
+            <i class="bx bxs-briefcase"></i>
+            <div class="text-box">
+              <h2>Machine Learning Intern</h2>
+              <small>Aug 2023 - Sep 2023</small>
+              <p>
+                Interned at Yenepoya Technology Incubator (YTI) for one month,
+                focusing on machine learning projects. Developed and implemented
+                machine learning models for data analysis and predictive
+                modeling tasks.
+              </p>
+              <span class="r-arrow"></span>
+            </div>
+          </div>
+
+          <div class="container left-side">
+            <i class="bx bxs-briefcase"></i>
+            <div class="text-box">
+              <h2>Machine Learning Intern</h2>
+              <small>Dec 2023 - Mar 2024</small>
+              <p>
+                Completed a three-month machine learning internship program by
+                THE WEBSITE MAKERs. Worked on various machine learning projects,
+                including natural language processing, computer vision, and
+                recommendation systems.
+              </p>
+              <span class="l-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline" id="skills">
+          <div class="container left-side">
+            <i class="bx bxl-redux"></i>
+            <div class="text-box">
+              <h2>Programming Skills</h2>
+              <p>
+                Proficient in <strong><em>Java</em>,</strong>
+                <strong><em>Python</em>,</strong> and
+                <strong><em>C</em></strong> programming languages. Developed
+                various scripts and projects using these languages. Experienced
+                in software development, data analysis, and algorithm
+                implementation.
+              </p>
+              <span class="l-arrow"></span>
+            </div>
+          </div>
+
+          <div class="container right-side">
+            <i class="bx bxl-redux"></i>
+            <div class="text-box">
+              <h2>Front End Skills</h2>
+              <p>
+                Proficient in <strong><em>HTML</em>,</strong>
+                <strong><em>CSS</em>,</strong> and
+                <strong><em>JavaScript</em></strong> for developing interactive
+                and responsive web applications. Experienced in front-end and
+                back-end development using modern frameworks and libraries.
+              </p>
+             
+              <span class="r-arrow"></span>
+            </div>
+          </div>
+
+          <div class="container left-side">
+            <i class="bx bxl-redux"></i>
+            <div class="text-box">
+              <h2>Backend End Skills</h2>
+              
+              <p>
+                Skilled in <strong><em>Django</em></strong> framework for
+                building robust and scalable web applications. Proficient in
+                database management using <strong><em>MySQL</em></strong>, <strong><em>MongoDB</em></strong> and
+                implementing complex data models and queries.
+              </p>
+              <span class="l-arrow"></span>
+            </div>
+          </div>
+
+          <div class="container right-side">
+            <i class="bx bxl-redux"></i>
+            <div class="text-box">
+              <h2>Professional Skills</h2>
+              <p>
+                <strong>Problem-solving,</strong>
+                <strong>analytical skills,</strong> <strong>teamwork,</strong>
+                <strong>time management,</strong> and
+                <strong>good communication</strong>. Capable of analyzing
+                complex issues, interpreting data, collaborating effectively
+                with teams, prioritizing tasks efficiently, and conveying ideas
+                clearly and effectively.
+              </p>
+              <span class="r-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline" id="education">
+          <div class="container left-side">
+            <i class="bx bxs-graduation"></i>
+            <div class="text-box">
+              <h2>Computer Science and Engineering</h2>
+              <small>2020 - 2024</small>
+              <p>
+                Bachelor of Engineering in Computer Science and Engineering at
+                Yenepoya Institute of Technology
+              </p>
+              <p>An Undergraduate with a CGPA 8.93</p>
+              <span class="l-arrow"></span>
+            </div>
+          </div>
+
+          <div class="container right-side">
+            <i class="bx bxs-graduation"></i>
+            <div class="text-box">
+              <h2>Pre University</h2>
+              <small>2018 - 2020</small>
+              <p>Completed II PUC at St Sebastian PU College</p>
+              <p>Passed with an aggregate of 95%</p>
+              <span class="r-arrow"></span>
+            </div>
+          </div>
+
+          <div class="container left-side">
+            <i class="bx bxs-graduation"></i>
+            <div class="text-box">
+              <h2>SSLC</h2>
+              <small>2018</small>
+              <p>
+                Completed SSLC at Hazrath Seyyid Madani English Medium School
+              </p>
+              <p>Passed with an aggregate of 88.32%</p>
+              <span class="l-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="s services">
+        <h1><span>SERVICES</span></h1>
+        <h3>What <span>I do</span></h3>
+        <div class="service">
+          <div>
+            <div class="box"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Full Stack Development</h3>
+            <p>
+              Offering comprehensive solutions in Full Stack Development,
+              covering both front-end and back-end technologies. Specializing in
+              creating responsive and dynamic web applications using modern
+              frameworks and libraries.
+            </p>
+          </div>
+          <div>
+            <div class="box"><i class="fa-solid fa-gears"></i></div>
+            <h3>Machine Learning</h3>
+            <p>
+              Providing Machine Learning services to harness the power of data
+              for predictive analytics, pattern recognition, and
+              decision-making. Offering expertise in building and deploying
+              machine learning models for various applications.
+            </p>
+          </div>
+          <div>
+            <div class="box">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h3>Data Analytics</h3>
+            <p>
+              Delivering Data Analytics solutions to extract actionable insights
+              from your data. Utilizing advanced analytical techniques and
+              visualization tools to uncover trends, correlations, and
+              opportunities that drive business growth.
+            </p>
+          </div>
+          <div>
+            <div class="box"><i class="fa-solid fa-code"></i></div>
+            <h3>Competitive Programming</h3>
+            <p>
+              Empowering businesses with Competitive Programming expertise,
+              solving complex algorithmic challenges and optimizing code
+              efficiency. Offering tailored solutions to enhance performance and
+              meet specific programming needs.
+            </p>
+          </div>
+          <div>
+            <div class="box"><i class="fa-solid fa-microchip"></i></div>
+            <h3>Tech Support</h3>
+            <p>
+              Providing reliable Tech Support services to ensure smooth
+              operations and troubleshoot technical issues effectively. Offering
+              timely assistance and expert solutions to optimize system
+              performance and user experience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="s portfolio">
+        <h1>PORTFOLIO</h1>
+        <h3>Latest <span>Works</span></h3>
+        <div class="port">
+          <div class="p1">
+            <h3>Hunt Golfers</h3>
+            <p>
+              Hunt Golfer is a golf-themed website showcasing animations and
+              features using HTML, CSS, and JavaScript. It boasts a responsive
+              design, custom cursor, GSAP animations, interactive navigation,
+              card animations, and scroll-triggered effects.
+            </p>
+
+            <a
+              href="https://github.com/Ibrahim-Naseef/Hunt-Golfers.git"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://ibrahim-naseef.github.io/Hunt-Golfers/"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <div class="p2">
+            <h3>Amazon Clone</h3>
+            <p>
+              Amazon Clone is a basic e-commerce platform replica, serving as an
+              educational resource for building more complex applications. It
+              features simple product listings with images and titles, a basic
+              search function, and an "Add to Cart" button. Built using HTML and
+              CSS.
+            </p>
+
+            <a
+              href="https://github.com/Ibrahim-Naseef/AMAZON-CLONE.git"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://ibrahim-naseef.github.io/AMAZON-CLONE/"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <div class="p3">
+            <h3>Hit/Miss Game</h3>
+            <p>
+              Hit/Miss Game is a fast-paced reaction and accuracy test. Players
+              must click on bubbles matching a random number within 30 seconds,
+              earning 10 points per successful hit. Customize game variables and
+              appearance to tailor the experience.
+            </p>
+
+            <a
+              href="https://github.com/Ibrahim-Naseef/Hit-Miss-Game.git"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="  https://ibrahim-naseef.github.io/Hit-Miss-Game/"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <div class="p4">
+            <h3>Brizzle Website</h3>
+            <p>
+              A dynamic restaurant site designed for easy exploration and
+              reservations. Features include engaging sections for home, about,
+              menu, reservation, gallery, and contact. Built with HTML, CSS,
+              JavaScript, and Bootstrap.
+            </p>
+
+            <a
+              href="https://github.com/Ibrahim-Naseef/Brizzle-Website.git"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://ibrahim-naseef.github.io/Brizzle-Website/"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <div class="p5">
+            <h3>Todo List App</h3>
+            <p>
+              Todo App is a simple task manager built with HTML, CSS, and
+              JavaScript. Features include adding new todos, marking todos as
+              complete, deleting todos, and storing todos in localStorage for
+              persistence.
+            </p>
+            <a
+              href="https://github.com/Ibrahim-Naseef/TO-DO-LIST.git"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href=" https://ibrahim-naseef.github.io/TO-DO-LIST/"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          <div class="p6">
+            <h3>Rock Paper Scissor Game</h3>
+            <p>
+              This project is a Rock, Paper, Scissors game where players compete
+              against the computer. It offers quick gameplay and tracks scores
+              for both sides. Built using HTML, CSS, and JavaScript.
+            </p>
+
+            <a
+              href="https://github.com/Ibrahim-Naseef/Hunt-Golfers.git"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://ibrahim-naseef.github.io/Hunt-Golfers/"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="s contact">
+        <h1>CONTACT</h1>
+        <h3>Get in <span>Touch</span></h3>
+        <div class="c">
+          <div class="left">
+            <form id="contactForm">
+              <input type="text" id="Name" placeholder="Name" required />
+              <input type="email" id="email" placeholder="Email" required />
+              <input type="text" id="subject" placeholder="Subject" />
+              <input type="tel" id="number" placeholder="9876543210" />
+              <textarea
+                name="info"
+                id="info"
+                cols="30"
+                rows="10"
+                placeholder="Type Here.."
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="right">
+            <div>
+              <i class="bx bx-phone"></i>
+              <h3>Phone</h3>
+              <p>+91 7892762058</p>
+            </div>
+            <div>
+              <i class="bx bx-envelope"></i>
+              <h3>Email</h3>
+              <p>ibrahimnaseef19@gmail.com</p>
+            </div>
+            <div>
+              <i class="bx bx-current-location"></i>
+              <h3>Location</h3>
+              <p>Ullal, Mangalore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>&copy; 2024 Ibrahim Naseef. All rights reserved.</p>
+        <a href="#" id="scrollToHome"><i class="bx bxs-upvote"></i></a>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "6B0iTUnwwN5IzIQ2i",
+        });
+      })();
+    </script>
+   <script src="https://unpkg.com/smooth-scrollbar@8.5.2/dist/
+   smooth-scrollbar.js"></script>  
+    <script src="script.js"></script>
+  </body>
+</html>
