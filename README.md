@@ -48,6 +48,21 @@ To run this project locally, follow these steps:
 - Libraries: GSAP, Typed.js, EmailJS, VanillaTilt
 - Images: Unsplash, Pexels
 
+## Snapshots
+![img1](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/a28320ca-a36f-47ff-a198-1ef96e1c9471)
+![img2](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/a4388299-8668-4d66-a668-846fab5e7cc8)
+![img3](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/a63d3eed-ca7b-4276-a8f5-9801f23533fc)
+![img4](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/ca89b77d-e39d-4ff0-b690-60192ed7fd51)
+![img5](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/22448da9-7e52-4f1f-84e9-900101cfbefb)
+![img6](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/3dd47b2b-c8aa-46fd-a57c-4b92a2d30878)
+![img7](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/9b063b71-3aa0-4903-8c38-51dfc6d09981)
+![img8](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/b869aa02-81cb-414d-b369-04dd2d1a44fc)
+![img9](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/6e35983c-9284-4591-8302-f026476d6603)
+![img10](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/96b220f0-85f8-49d1-b56b-9e9c8b6f7510)
+![img11](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/79540ecb-b301-40dd-acee-d19d3b7c45a0)
+![img12](https://github.com/Ibrahim-Naseef/My-Portfolio/assets/156147657/3e8ef7cd-5ef5-4986-b81c-a4384c58bb33)
+
+
 
 
 ## Author 🧑‍💼
@@ -56,3 +71,5 @@ To run this project locally, follow these steps:
   - Email: ibrahimnaseef19@gmail.com
   - Phone: +91 7892762058
 
+## Visit my site
+[My Portfolio](http://naseef.live)
