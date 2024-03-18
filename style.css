@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: sans-serif; */
+
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -9,6 +11,17 @@
   color: #fff;
   background-color: #0ef;
 }
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 0.8rem;
+  background-color: #366156;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0ef;
+}
+
 html,
 body {
   height: 100%;
@@ -29,7 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 15;
+  z-index: 999;
   position: absolute;
 }
 
@@ -37,7 +50,7 @@ body {
   width: 80px;
   aspect-ratio: 1;
   position: relative;
-  z-index: 12;
+  z-index: 999;
 }
 .loader:before,
 .loader:after {
@@ -125,6 +138,13 @@ a {
   font-size: 0.8rem;
   font-weight: 700;
   z-index: 11;
+}
+
+.bar i{
+  color: #0ef;
+  font-size: 2rem;
+  font-weight: 500;
+  display: none;
 }
 
 .nav a:hover,
@@ -301,6 +321,7 @@ a {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 1rem #0ef;
+  z-index: 12;
 }
 
 .left img {
@@ -311,6 +332,7 @@ a {
   margin: 1.5rem;
   border-radius: 15px;
   transition: all ease 2s 2;
+  z-index: 12;
 }
 
 .left img:hover {
@@ -353,7 +375,7 @@ a {
   text-align: justify;
   width: 45rem;
   height: 25rem;
-  position: absolute;
+  /* position: absolute; */
   right: 2rem;
   color: rgb(250, 250, 250);
   gap: 1rem;
@@ -465,7 +487,7 @@ a {
   padding: 20px 20px;
   border-radius: 6px;
   /* border: 1px solid black; */
-  font-size: 15px;
+  font-size: 1.05rem;
   box-shadow: 0 0 10px;
   text-align: justify;
 }
@@ -508,9 +530,7 @@ a {
   left: 49.9%;
   border-left: #0ef 2px solid;
   animation: rr 0.5s linear;
-
 }
-
 
 @keyframes rr {
   0% {
@@ -526,7 +546,6 @@ a {
     opacity: 1;
   }
 }
-
 
 .container i {
   position: absolute;
@@ -643,7 +662,6 @@ span {
   scale: 1.1;
   color: #fff;
   animation: xx 0.5s ease;
-
 }
 
 .service div .box {
@@ -655,14 +673,11 @@ span {
   border-radius: 50%;
   box-shadow: 0 0 1rem;
   z-index: 12;
-  
 }
 
 .service div .box:hover {
   background-color: black;
   color: white;
-
-  
 }
 .service div .box i {
   font-size: 2rem;
@@ -982,7 +997,7 @@ span {
   aspect-ratio: 1/1;
   background: #0ef;
   box-shadow: 0 10px #0ef, 0 0 20px #0ef, 0 0 30px #0ef, 0 0 50px #0ef;
-  animation: animate 10s linear  forwards;
+  animation: animate 10s linear forwards;
 }
 
 @keyframes animate {
@@ -1008,4 +1023,369 @@ span {
   height: 100vh;
   opacity: 0.5;
   background: linear-gradient (#0ef, transparent);
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 90%;
+  }
+  .home {
+    padding-top: 5rem;
+  }
+
+  .about .aboutme {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    padding-bottom: 0;
+    /* flex-wrap: wrap; */
+    /* background-color: red; */
+    /* margin-bottom: -7rem; */
+  }
+
+  .aboutme .right {
+    margin-top: -2.5rem;
+    /* background-color: red; */
+    /* overflow: hidden; */
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .aboutme .btn {
+    /* position: absolute; */
+    margin-top: -2rem;
+    /* background-color: red; */
+    /* line-height: -92rem; */
+    z-index: 12;
+  }
+
+  .about-info {
+    margin-top: -2rem;
+  }
+
+  .contact .c .left form {
+    display: flex;
+    justify-content: left;
+    /* flex-wrap: nowrap; */
+    font-size: 3rem;
+    /* background-color: red; */
+    height: 30rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .c .left form input {
+    font-size: 0.2rem;
+    /* background-color: pink; */
+    width: 14rem;
+  }
+
+  .contact .c .right {
+    margin-top: 3rem;
+  }
+}  @media (max-width: 700px) {
+  html {
+    font-size: 70%;
+  }
+  .body {
+    width: 100vw;
+  }
+  .home {
+    flex-direction: column-reverse;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .home .left {
+    margin-top: -3rem;
+  }
+  .nav{
+    padding-top: 4rem;
+  }
+  .nav a p {
+    padding: 0.5rem 1rem;
+  }
+  .bar{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 22rem;
+    height: 200vh;
+    width:20rem;
+    right: 0;
+    /* justify-content: start; */
+    /* align-items: last baseline; */
+  }
+  .nav .bar a {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding-left: 40%;
+    transition: all ease 0.5s;
+  }
+  .bar i {
+    padding-right:px;
+    margin-top: -22rem;
+    display: block;
+    font-size: 2rem;
+    z-index: 12;
+    position: absolute;
+    right: 1rem;
+  }
+
+  .bar.show-links i {
+    /* margin-top: 1.5rem; */
+    margin-bottom: 2rem;
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 12;
+  }
+  .bar i:hover {
+    cursor: pointer;
+    z-index: 12;
+  }
+  .bar.show-links a, .bar.show-links{
+    display: flex;
+    /* font-size: 55rem; */
+    background-color: #323946;
+    height: auto;
+    /* padding-top: 5rem; */
+  }
+  .home{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: red; */
+    padding: 1rem;
+  }
+
+  .home .left{
+    width: 100%;
+/* background-color: blue; */
+display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .home .left h1,.home .left h1 span{
+    font-size: 3.4rem;
+  }
+
+  .home .right{
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    padding: 1rem -20rem;
+   
+  }
+
+  .home .right img{
+    border-radius: 50%;
+
+    height: 20rem;
+    width: 20rem;
+    padding: 0.2rem;
+/* padding: auto; */
+/* padding: 20rem; */
+  }
+
+  .about{
+    height: auto;
+  }
+.aboutme{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7rem;
+}
+
+.aboutme .left{
+  scale:0.5
+}
+
+.aboutme .right{
+  margin-top: 2rem;
+  padding: 7rem;
+  /* text-align: center; */
+}
+
+.aboutme .btn{
+  width: 100%;
+  text-align: center;
+  /* background-color: red; */
+
+}
+
+.timeline{
+  /* position: absolute; */
+/* background-color: red; */
+left: 1rem;
+}
+
+.left-side {
+  left: 0;
+  /* border-left: #0ef 2px solid; */
+  border-right: none;
+  animation: rr 0.5s linear;
+}
+
+.right-side{
+  left: 0;
+  border: 0;
+}
+
+
+.l-arrow,.r-arrow {
+  display: none;
+  height: 0.1rem;
+  width: 2.4rem;
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  background-color: #0ef;
+}
+
+.left-side i,.right-side i {
+  display: none;
+  left: -2%;
+  padding: 0.2rem;
+
+  z-index: 11;
+}
+.text-box{
+  width: 80vw;
+}
+
+.c{
+display: flex;
+flex-direction: column;
+}
+
+.c .left{
+  width: 100%;
+  padding: 1rem ;
+  /* background-color: red; */
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  flex-wrap: nowrap;
+}
+
+
+.c .right{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* gap: 1px; */
+  /* width: 100vw; */
+  /* background-color: red; */
+
+}
+
+.c .right div{
+  margin-left: -6.4rem;
+  margin-top: -7rem;
+  /* height: 8rem;
+  width: 17rem; */
+  scale: 0.6;
+
+  /* display: flex;
+  flex-direction: column; */
+/* justify-content: center; */
+align-items: center;
+  padding: 0rem 5rem;
+}
+
+.c .left form {
+  align-items: none;
+  justify-content: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+
+.c .left form input {
+  height: 4rem;
+  width: 16rem;
+  border-radius: 1rem;
+  background-color: #323946;
+  color: #0ef;
+  padding-left: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+*::placeholder {
+  color: #0ef;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-left: 1rem;
+  opacity: 0.4;
+}
+
+.c .left form textarea {
+  width: 90%;
+  border-radius: 1rem;
+  background-color: #323946;
+  color: #0ef;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+}
+
+@media (max-width: 500px) {
+  .contact{
+    height: auto;
+  }
+  .c .left form input {
+    height: 4rem;
+    width: 11rem;
+    border-radius: 1rem;
+    background-color: #323946;
+    color: #0ef;
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .c .right{
+    /* padding-top: -100rem; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1px; */
+    width: 100%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .c .right div{
+    margin-left: 0rem;
+    margin-top: -3rem;
+     height: 8rem;
+    width: 33rem; 
+    scale: 0.6;
+  
+    display: flex;
+    flex-direction: column; 
+   justify-content: center;
+  align-items: center;
+    /* padding: 2rem 17rem; */
+  }
+  
 }

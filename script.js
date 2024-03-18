@@ -11,9 +11,7 @@ window.onscroll = () => {
     if (top >= offset && top < offset + height) {
       navLinks.forEach((links) => {
         links.classList.remove("active");
-        document
-          .querySelector(".bar a[href*=" + id + "]")
-          .classList.add("active");
+        document.querySelector(".bar a[href*=" + id + "]").classList.add("");
       });
     }
   });
@@ -249,7 +247,7 @@ tl.from(".about-info", {
   },
 });
 
-tl.from(".services *", {
+gsap.from(".services *", {
   y: -100,
   scale: 0,
   opacity: 0,
@@ -259,13 +257,13 @@ tl.from(".services *", {
     trigger: ".services h1",
     scroll: "body",
     // markers: true,
-    start: "top 50%",
+    start: "top 90%",
     end: "top 0%",
     scrub: 2,
   },
 });
 
-tl.from(".portfolio *", {
+gsap.from(".portfolio *", {
   y: -100,
   scale: 0,
   opacity: 0,
@@ -275,14 +273,13 @@ tl.from(".portfolio *", {
     trigger: ".portfolio h3",
     scroll: "body",
     // markers: true,
-    start: "top 80%",
-    end: "top 0%",
+    start: "top 90%",
+    end: "top 50%",
     scrub: 2,
   },
 });
 
 tl.from(".contact *", {
-
   opacity: 0,
   duration: 0.1,
   // stagger: 0.1,
@@ -294,4 +291,11 @@ tl.from(".contact *", {
     end: "top 0%",
     scrub: 2,
   },
+});
+
+const menuIcon = document.getElementById("menu-icon");
+const navBar = document.querySelector(".nav .bar");
+
+menuIcon.addEventListener("click", function () {
+  navBar.classList.toggle("show-links");
 });
