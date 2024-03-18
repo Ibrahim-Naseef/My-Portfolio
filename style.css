@@ -1207,7 +1207,7 @@ span {
   .aboutme {
     display: flex;
     flex-direction: column;
-    margin-bottom: 7rem;
+    margin-bottom: 12rem;
   }
 
   .aboutme .left {
