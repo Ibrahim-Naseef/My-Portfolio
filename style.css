@@ -1115,10 +1115,13 @@ span {
     position: absolute;
     display: flex;
     flex-direction: column;
-    margin-top: 22rem;
+    margin-top: 47rem;
     height: 200vh;
     width: 20rem;
     right: 0;
+    padding: 0 4rem;
+    padding-top: 5rem;
+    padding-bottom:30rem ;
     /* justify-content: start; */
     /* align-items: last baseline; */
   }
